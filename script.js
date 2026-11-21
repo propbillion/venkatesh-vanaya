@@ -1,12 +1,12 @@
-// Google Ads Conversion Tracking - Venkatesh Vanaya Kharadi (WhatsApp + Call)
-// Conversion labels: WhatsApp = TSKiCPrInrwdENz43JxF, Call = fDhBCP3InrwdENz43JxF
-// (Same AW-18582289500 account. Swap these two labels if you create Vanaya-specific conversion actions.)
+// Google Ads Conversion Tracking - Venkatesh Vanaya Kharadi (separate from Majestique & Ceratec)
+// Vanaya - WhatsApp Inquiry = BmTJCL2w07wdENz43JxF  -> every wa.me button on the page + both forms
+// Vanaya - Call Click       = MUYiCKCe2bwdENz43JxF  -> every tel: button (floating call + sticky bar)
 document.addEventListener('click', function (e) {
   if (typeof gtag !== 'function') return;
   if (e.target.closest('a[href*="wa.me"]')) {
-    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' });
+    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/BmTJCL2w07wdENz43JxF' });
   } else if (e.target.closest('a[href^="tel:"]')) {
-    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/fDhBCP3InrwdENz43JxF' });
+    gtag('event', 'conversion', { 'send_to': 'AW-18582289500/MUYiCKCe2bwdENz43JxF' });
   }
 });
 
@@ -126,7 +126,7 @@ document.addEventListener('click', function (e) {
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
-      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' }); }
+      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/BmTJCL2w07wdENz43JxF' }); }
       window.open('https://wa.me/918055709079?text=' + message, '_blank');
 
       const btn = form.querySelector('button[type="submit"]');
@@ -178,7 +178,7 @@ document.addEventListener('click', function (e) {
         'Name%3A+' + encodeURIComponent(name) + '%0A' +
         'Mobile%3A+%2B91+' + encodeURIComponent(mob);
 
-      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/TSKiCPrInrwdENz43JxF' }); }
+      if (typeof gtag === 'function') { gtag('event', 'conversion', { 'send_to': 'AW-18582289500/BmTJCL2w07wdENz43JxF' }); }
       window.open('https://wa.me/918055709079?text=' + message, '_blank');
 
       const btn = heroForm.querySelector('button[type="submit"]');
