@@ -5642,7 +5642,7 @@ p.hero-headline-v2.hero-config-pill em { color: #F3D9A4 !important; font-weight:
 
 /* ============================================
    VANAYA THEME LAYER - brochure palette
-   Sage #B7BBA4 / #C2C5B0 · Black #1A1A17 · Gold #C5A564
+   Sage #B7BBA4 / #C4C7B3 · Black #1A1A17 · Gold #C5A564
    ============================================ */
 
 /* Images never depend on JS to become visible */
@@ -5660,7 +5660,7 @@ img { content-visibility: visible !important; }
 .header-cta svg { stroke: #15150F; }
 
 /* Action bar on sage */
-.action-bar-wrap { background: #C2C5B0 !important; border-bottom: 1px solid rgba(26,26,23,0.08) !important; }
+.action-bar-wrap { background: #C4C7B3 !important; border-bottom: 1px solid rgba(26,26,23,0.08) !important; }
 .action-chip { background: rgba(255,255,255,0.55) !important; color: #1A1A17 !important; border-color: rgba(26,26,23,0.12) !important; }
 .action-chip:hover { background: #1A1A17 !important; color: #E0C98F !important; }
 
@@ -5683,8 +5683,8 @@ img { content-visibility: visible !important; }
 .eyebrow { color: #9C8557; }
 
 /* Sage brochure surfaces */
-.bg-mist { background: #E4E6D9 !important; }
-.every-sqft-section { background: #ECEEE4 !important; }
+.bg-mist { background: #C4C7B3 !important; }
+.every-sqft-section { background: #C4C7B3 !important; }
 .section-usps, .township-section-v2, .partners-section, .prereg-section, .footer, .trust-strip, .heritage-section ~ .partners-section {
   background: linear-gradient(180deg, #1A1A17 0%, #0D0D0B 100%) !important;
 }
@@ -5704,3 +5704,26 @@ img { content-visibility: visible !important; }
 @media (max-width: 520px) {
   .text-center .btn, .flex-center .btn { white-space: normal; max-width: 100%; text-align: center; justify-content: center; }
 }
+
+/* Sage #C4C7B3 (client palette) */
+:root { --mist: #C4C7B3; --cream-deep: #B3B6A0; }
+.section-head .lead, .bg-mist .lead, .every-sqft-section .lead { color: #2E2F28; }
+.bg-mist .eyebrow, .every-sqft-section .eyebrow { color: #6E5A2E; }
+.bg-mist .h-section em, .every-sqft-section .h-section em { color: #7A6530 !important; }
+.pc-offer-note { color: #3A3B33 !important; }
+
+/* Podium image - slight blur */
+.hero2-img { filter: blur(3px) saturate(1.05); transform: scale(1.02); }
+
+/* All-inclusive: hidden behind enquiry */
+.tk-table-ex td { text-align: left !important; }
+.tk-table-ex td small { display:block; opacity:.6; font-size: 11px; margin-top: .15rem; }
+.tk-blur { display:inline-block; filter: blur(7px); user-select:none; pointer-events:none; }
+.tk-unlock { display:flex; align-items:center; justify-content:center; gap:.55rem; width:100%; margin-top: 1.1rem; padding: .95rem 1.2rem; border-radius: 14px;
+  font-weight: 700; font-size: 14.5px; letter-spacing: .02em; color:#15150F; background: linear-gradient(100deg,#B8964F 0%,#E8D3A0 50%,#B8964F 100%);
+  background-size: 200% 100%; border:1px solid rgba(255,236,190,.85); box-shadow: 0 14px 32px -14px rgba(197,165,100,.9); animation: tkUnlockShine 3.2s ease-in-out infinite; }
+.tk-unlock svg { width:16px; height:16px; fill:none; stroke:#15150F; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+.tk-unlock:hover { transform: translateY(-1px); }
+@keyframes tkUnlockShine { 0%,100% { background-position: 0% 0; } 50% { background-position: 100% 0; } }
+.tk-unlock-note { margin:.6rem 0 0; font-size: 12px; color: rgba(255,255,255,.55); text-align:center; }
+.section.bg-mist, section.bg-mist { background: #C4C7B3 !important; }
